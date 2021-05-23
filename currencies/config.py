@@ -222,8 +222,8 @@ MONEY_FORMATS = {
         "money_with_currency_format": "${amount} CAD",
     },
     MONEY_CURRENCY_CHF: {
-        "money_format": "SFr. {amount}",
-        "money_with_currency_format": "SFr. {amount} CHF",
+        "money_format": "{amount} CHF",
+        "money_with_currency_format": "{amount} CHF",
     },
     MONEY_CURRENCY_CLP: {
         "money_format": "${amount}",
