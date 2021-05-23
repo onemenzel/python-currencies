@@ -33,7 +33,7 @@ Or by ``easy_install``
 
     $ easy_install currencies
 
-Another way is by cloning ``currencies``'s `git repo <https://github.com/Alir3z4/python-currencies>`_
+Another way is by cloning ``currencies``'s `git repo <https://github.com/onemenzel/python-currencies>`_
 
 ::
 
