@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+from decimal import Decimal
 
 MONEY_CURRENCY_AED = "AED"
 MONEY_CURRENCY_AFN = "AFN"
