@@ -34,7 +34,7 @@ class Currency:
         return list(cls.money_formats.keys())
     
     def get_quantization(self) -> Decimal:
-        self.money_formats[
+        return self.money_formats[
             self.get_money_currency()
         ].get('quantization', default_quantization)
     
