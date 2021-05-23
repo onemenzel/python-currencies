@@ -2,6 +2,7 @@
 from typing import Union, List, Optional
 from currencies.config import MONEY_FORMATS
 from currencies.exceptions import CurrencyDoesNotExist
+from decimal import Decimal
 
 __VERSION__ = (2020, 12, 12)
 
@@ -10,6 +11,7 @@ def get_version() -> str:
     """Returns the package version."""
     return ".".join(str(v) for v in __VERSION__)
 
+default_quantization = Decimal('1.00')
 
 class Currency:
     money_currency: Optional[str] = None
@@ -30,6 +32,14 @@ class Currency:
     @classmethod
     def get_currency_formats(cls) -> list:
         return list(cls.money_formats.keys())
+    
+    def get_quantization(self) -> Decimal:
+        self.money_formats[
+            self.get_money_currency()
+        ].get('quantization', default_quantization)
+    
+    def quantize_amount(self, amount: Decimal) -> Decimal:
+        return amount.quantize(self.get_quantization())
 
     def get_money_format(self, amount: Union[int, float, str]) -> str:
         """
