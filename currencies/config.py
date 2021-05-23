@@ -448,12 +448,12 @@ MONEY_FORMATS = {
     MONEY_CURRENCY_LTL: {
         'money_format': '{amount} Lt',
         'money_with_currency_format': '{amount} Lt',
-        'places': None
+        'places': 2
     },
     MONEY_CURRENCY_LVL: {
         'money_format': 'Ls {amount}',
         'money_with_currency_format': 'Ls {amount} LVL',
-        'places': None
+        'places': 2
     },
     MONEY_CURRENCY_MAD: {
         'money_format': '{amount} dh',
@@ -628,7 +628,7 @@ MONEY_FORMATS = {
     MONEY_CURRENCY_STD: {
         'money_format': 'Db {amount}',
         'money_with_currency_format': 'Db {amount} STD',
-        'places': None
+        'places': 2
     },
     MONEY_CURRENCY_SYP: {
         'money_format': 'S£{amount}',
@@ -710,10 +710,11 @@ MONEY_FORMATS = {
         'money_with_currency_format': 'FCFA{amount} XAF',
         'places': 0
     },
+    # not a real currency
     MONEY_CURRENCY_XBT: {
         'money_format': '{amount} BTC',
         'money_with_currency_format': '{amount} BTC',
-        'places': None
+        'places': 8
     },
     MONEY_CURRENCY_XCD: {
         'money_format': '${amount}',
