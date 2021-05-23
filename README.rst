@@ -37,7 +37,7 @@ Another way is by cloning ``currencies``'s `git repo <https://github.com/onemenz
 
 ::
 
-    $ git clone git://github.com/Alir3z4/python-currencies.git
+    $ git clone git://github.com/onemenzel/python-currencies.git
 
 Then install it by running:
 ::
