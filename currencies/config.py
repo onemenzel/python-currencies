@@ -302,7 +302,7 @@ MONEY_FORMATS = {
         'quantization': Decimal('1.00'),
     },
     MONEY_CURRENCY_EUR: {
-        'money_format': '€{amount}',
+        'money_format': '{amount} €',
         'money_with_currency_format': '€{amount} EUR',
         'quantization': Decimal('1.00'),
     },
