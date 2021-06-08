@@ -38,8 +38,8 @@ class Currency:
             self.get_money_currency()
         ].get('quantization', default_quantization)
     
-    def quantize_amount(self, amount: Decimal) -> Decimal:
-        return amount.quantize(self.get_quantization())
+    def quantize_amount(self, amount: Decimal, *args, **kwargs) -> Decimal:
+        return amount.quantize(self.get_quantization(), *args, **kwargs)
 
     def get_money_format(self, amount: Union[int, float, str]) -> str:
         """
