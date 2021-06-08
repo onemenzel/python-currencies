@@ -4,7 +4,7 @@ from currencies.config import MONEY_FORMATS
 from currencies.exceptions import CurrencyDoesNotExist
 from decimal import Decimal
 
-__VERSION__ = (2021, 5, 23)
+__VERSION__ = (2021, 6, 8)
 
 
 def get_version() -> str:
